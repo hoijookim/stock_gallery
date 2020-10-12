@@ -34,7 +34,7 @@
 		</div>
 		
 		<div class="menuArea">
-			<div class="menuAreaTab"><a href="sns.go">게시판(예정)</a></div>
+			<div class="menuAreaTab"><a href="sns.go">게시판</a></div>
 			<div class="menuAreaTab"><a href="stock.search">종목정보</a></div>
 		</div>
 	</div>
