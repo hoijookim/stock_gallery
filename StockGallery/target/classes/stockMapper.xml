@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hoijoo.sg.stock.StockMapper" >
+	<select id="searchCode" parameterType="com.hoijoo.sg.stock.Stock"
+		resultType="com.hoijoo.sg.stock.Stock">
+		select * from corpcode where corp_code = #{corp_code}
+	</select>
+	<select id="searchName" parameterType="com.hoijoo.sg.stock.Stock"
+		resultType="com.hoijoo.sg.stock.Stock">
+		select * from corpcode where corp_name = #{corp_name}
+	</select>
+	
+</mapper>

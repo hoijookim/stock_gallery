@@ -1,0 +1,203 @@
+@charset "UTF-8";
+#color {
+ color: #7fdbda;
+ color: #ade498;
+ color: #ede682;
+ color: #febf63;
+	
+}
+@font-face {
+	font-family: sd3;
+	src: url(../font/SCDREAM3.OTF);
+}
+@font-face {
+	font-family: sd5;
+	src: url(../font/SCDREAM5.OTF);
+}
+@font-face {
+	font-family: sd7;
+	src: url(../font/SCDREAM7.OTF);
+}
+@font-face {
+	font-family: notoM;
+	src: url(../font/NonoSansKR-Medium.OTF);
+}
+@font-face {
+	font-family: notoB;
+	src: url(../font/NonoSansKR-Bold.OTF);
+}
+
+
+#priceInfo .comparePrevPrice {
+	font-family: notoM;
+	font-size: 10pt;
+	border-right: black solid 1px;
+	padding-right: 10px;
+}
+
+#priceInfo .compareRatio {
+	font-family: notoM;
+	font-size: 10pt;
+	padding-left: 10px;
+}
+
+#priceInfo .todayCurrentPrice{
+	font-family: notoB;
+	font-size: 18pt;
+}
+
+#priceInfo .todayRateMenu {
+	font-family: notoM;
+	font-size: 10pt;
+}
+
+
+
+#searchResultMain{
+	display: inline-block;
+	width: 70%;
+}
+
+#wrapCompany{
+	float: left;	
+
+	width: 100%;	
+}
+
+.wrapCompanyH2{
+	font-family: notoM;
+	float: left;	
+	margin-left: 20px;	
+
+}
+
+.wrapCompanyDiv{
+	margin-left: 20px;
+	margin-top: 30px;
+	float: left;
+	font-family: notoM;
+	font-size: 10pt;
+}
+
+#content {
+	border-top: black solid 2px;
+	height: 200px;
+	margin-top: 60px;
+	width: 100%;
+	visibility: hidden;
+	transition: all 0.5s ease-out;
+	
+}
+
+#chartArea {
+	height: 400px;
+	border-bottom: black solid 2px;
+	
+}
+
+.rateInfo {
+	height: 20%;
+	border-bottom: black solid 1px;
+	margin-bottom: 15px;
+	
+}
+
+.today {
+	display: inline-block;
+	float: left;
+	width: 25%;
+	border-right: black solid 1px;
+}
+
+.todayRateInfo {
+	display: inline-block;
+	float: right;
+	width: 74%;
+}
+
+.todayRateInfo table {
+	width: 100%;
+	margin-top: 5px;
+}
+
+.todayRateInfo table td{
+	font-family: notoM;
+	font-size: 11pt;
+	width: 10%;
+}
+
+.todayRateInfo .todayRateMenu {
+	font-family: notoM;
+	border-right: black solid 1px;
+}
+
+.todayRateInfo .todayRateMenu1 {
+	font-family: notoM;
+	width: 5%;
+}
+
+
+#financeInfoArea {
+	margin-top: 350px;
+	visibility: hidden;
+	transition: all 0.5s ease-out;
+}
+
+.corpFinanceInfo{
+	border-top: black solid 2px;
+	border-bottom: black solid 2px;
+	width: 100%;
+	font-family: notoM;
+}
+
+.corpFinanceInfo .curYear{
+	font-size: 11pt;	
+	text-align: center;
+}
+
+.corpFinanceInfo .lastYear{
+	font-size: 11pt;	
+	text-align: center;
+}
+
+.corpFinanceInfo .twoYear{
+	font-size: 11pt;	
+	text-align: center;
+}
+.corpFinanceInfo .fourthQ{
+	font-size: 11pt;	
+	text-align: center;
+}
+.corpFinanceInfo .thirdQ{
+	font-size: 11pt;	
+	text-align: center;
+}
+.corpFinanceInfo .secondQ{
+	font-size: 11pt;	
+	text-align: center;
+}
+.corpFinanceInfo .recentQ{
+	font-size: 11pt;	
+	text-align: center;
+}
+
+.corpFinanceInfo td {
+	font-size: 10pt;
+	text-align: right;
+}
+
+.corpPart {
+	font-family: notoM;
+	font-size: 12pt;
+	width: 100%;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.corpPart a{
+	font-family: notoM;
+	font-size: 12pt;
+	color: black;
+	cursor: pointer;
+	text-decoration: none;
+}

@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: notoM;
+	src: url(../font/NonoSansKR-Medium.OTF);
+}
+@font-face {
+	font-family: notoB;
+	src: url(../font/NonoSansKR-Bold.OTF);
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+#boxTodayIndex {
+	width: 100%;
+	height: 500px;
+}
+
+
+.kospi {
+	width: 50%;
+	height: 100%;
+	padding-top: 10px;
+	float: left;
+}
+.kospi h2 {
+	font-family: notoB;
+	font-size: 20pt;
+	text-align: left;
+	margin-left: 35px;
+}
+
+.kospiChart{
+	width: 90%;
+	height: 40%;
+	margin-top: 5px;
+}
+
+.kospiImg {
+	float: left;
+	margin-top: 18px;
+	margin-left: 25px;
+}
+
+.kospiIndex {
+	width: 90%;
+	
+}
+
+.kospiPrice {
+	font-family: notoB;
+	font-size: 24pt;
+	float: left;
+}
+
+.kospiUpDownRange {
+	font-family: notoB;
+	font-size: 14pt;
+	float: left;
+	margin-top: 16px;
+	margin-left: 5px;
+}
+
+.kospiRatio {
+	font-family: notoB;
+	font-size: 14pt;
+	float: left;
+	margin-top: 16px;
+	margin-left: 20px;
+}
+
+.kosdaq {
+	width: 50%;
+	height: 100%;
+	padding-top: 10px;
+	float: right;
+}
+
+.kosdaq h2 {
+	font-family: notoB;
+	font-size: 20pt;
+	text-align: left;
+	margin-left: 35px;
+}
+
+.kosdaqChart{
+	width: 90%;
+	height: 40%;
+	margin-top: 5px;
+}
+
+.kosdaqImg {
+	float: left;
+	margin-top: 18px;
+	margin-left: 25px;
+}
+.kosdaqIndex {
+	width: 90%;
+}
+
+.kosdaqPrice{
+	font-family: notoB;
+	font-size: 24pt;
+	float: left;
+}
+
+.kosdaqRatio {
+	font-family: notoB;
+	font-size: 14pt;
+	float: left;
+	margin-top: 16px;
+	margin-left: 20px;
+}
+
+.kosdaqUpDownRange {
+	font-family: notoB;
+	font-size: 14pt;
+	float: left;
+	margin-top: 16px;
+	margin-left: 5px;
+}
+

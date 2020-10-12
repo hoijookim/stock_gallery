@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: sd3;
+	src: url(../font/SCDREAM3.OTF);
+}
+@font-face {
+	font-family: sd5;
+	src: url(../font/SCDREAM5.OTF);
+}
+@font-face {
+	font-family: sd7;
+	src: url(../font/SCDREAM7.OTF);
+}
+@font-face {
+	font-family: sd9;
+	src: url(../font/SCDREAM9.OTF);
+}
+@font-face {
+	font-family: notoM;
+	src: url(../font/NonoSansKR-Medium.OTF);
+}
+@font-face {
+	font-family: notoB;
+	src: url(../font/NonoSansKR-Bold.OTF);
+}
+
+.byeBtn{
+	width: 150px;
+	height: 36px;
+	background-color: #ede682;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-left: 10px;
+	padding-top: 8px;
+	margin-bottom: 20px;
+	text-align: center;
+	display: inline-block;
+}
+
+.byeBtn button {
+	font-family: notoM;
+	font-size: 14pt;
+	text-decoration: none;
+	color: black;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.joinClick {
+	font-family: notoM;
+}
+.joinClick a {
+	font-family: notoM;
+	font-size: 12pt;
+	text-decoration: none;
+	color: #febf63;
+}
+
+.loginArea {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.loginImg {
+	max-height: 40px;
+	margin-right: 20px;
+}
+.loginInput {
+	font-family: notoM;
+	font-size: 10pt;
+	padding-left: 15px;
+	width: 250px;
+	height: 30px;
+	background-color: transparent;
+	border-radius: 5px;
+}
+.loginBtn {
+	font-family: notoM;
+	font-size: 12pt;
+	color: white;
+	width: 250px;
+	height: 40px;
+	background-color: #febf63;
+	margin-top: 30px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.loginName{
+	font-family: notoM;
+	font-size: 14pt;
+	padding-bottom: 20px;
+}
+
+#memberArea {
+	
+	width: 400px;
+	height: 600px;
+	padding: 30px 30px;
+	
+}
+
+
+
+.joinBtn {
+	width: 260px;
+	height: 36px;
+	background-color: #ede682;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding-top: 8px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.joinBtn button {
+	font-family: notoM;
+	font-size: 14pt;
+	text-decoration: none;
+	color: black;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	
+}
+
+.joinEmailInput {
+	font-family: notoM;
+	font-size: 11pt;
+	width: 300px;
+	height: 30px;
+	padding-left: 15px;
+	background-color: transparent;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+}
+
+.joinInput {
+	font-family: notoM;
+	font-size: 11pt;
+	width: 300px;
+	height: 30px;
+	padding-left: 15px;
+	background-color: transparent;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.joinInputAddr1{
+	font-family: notoM;
+	font-size: 11pt;
+	width: 220px;
+	height: 30px;
+	padding-left: 15px;
+	background-color: transparent;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 3px;
+}
+
+.joinInputAddr2 {
+	font-family: notoM;
+	font-size: 11pt;
+	width: 300px;
+	height: 30px;
+	padding-left: 15px;
+	background-color: transparent;
+	border-radius: 5px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.joinInputAddr3 {
+	font-family: notoM;
+	font-size: 11pt;
+	width: 300px;
+	height: 30px;
+	padding-left: 15px;
+	background-color: transparent;
+	border-radius: 5px;
+	margin-top: 3px;
+	margin-bottom: 20px;
+}
+
+.addrBtn {
+	font-family: notoM;
+	font-size: 11pt;
+	margin-left: 8px;
+	cursor: pointer;
+}
+
+
+
+#memberAreaTbl {
+	margin-top: 30px;
+	visibility: hidden;
+	transition: all 2s ease-out;
+	
+}
+
+.memberAreaGo button{
+	background-color: transparent;
+	font-family: notoM;
+	font-size: 14pt;
+	border: none;
+	cursor: pointer;
+}
+
+.updateBtn{
+	width: 150px;
+	height: 36px;
+	background-color: #ede682;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-left: 30px;
+	margin-right: 10px;
+	padding-top: 8px;
+	margin-bottom: 20px;
+	text-align: center;
+	float: left;
+	display: inline-block;
+}
+
+.updateBtn button {
+	font-family: notoM;
+	font-size: 14pt;
+	text-decoration: none;
+	color: black;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+
+
+

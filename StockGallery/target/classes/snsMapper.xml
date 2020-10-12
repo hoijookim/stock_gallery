@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hoijoo.sg.sns.SNSMapper">
+	<delete id="deleteMsg" parameterType="com.hoijoo.sg.sns.SNSMsg">
+		delete from s_gallery_sns where sgs_no = #{sgs_no} 
+	</delete>
+	<delete id="deleteReply" parameterType="com.hoijoo.sg.sns.SNSReply">
+		delete from s_gallery_sns_reply where sgsr_no = #{sgsr_no}
+	</delete>	
+	<select id="getAllMsgCount" resultType="java.lang.Integer">
+		select count(*)from
+		s_gallery_member, s_gallery_sns
+		where sg_email = sgs_owner
+	</select>
+	<select id="getSearchMsgCount"
+		parameterType="com.hoijoo.sg.sns.SNSSelector"
+		resultType="java.lang.Integer">
+		select count(*)
+		from s_gallery_member, s_gallery_sns
+		where sg_email = sgs_owner and
+		sg_email like '%'||#{search}||'%'
+		order by sgs_when desc
+	</select>
+
+	<select id="getMsg"
+		parameterType="com.hoijoo.sg.sns.SNSSelector"
+		resultType="com.hoijoo.sg.sns.SNSMsg">
+		select *
+		from (
+		select rownum as rn, sg_photo, sg_email, sgs_txt, sgs_when, sgs_no
+		from (
+		select *
+		from s_gallery_member, s_gallery_sns
+		where sg_email = sgs_owner and
+		sg_email like '%'||#{search}||'%'
+		order by sgs_when desc
+		)
+		)
+		where rn &gt;= #{start} and rn &lt;= #{end}
+	</select>
+	
+	<select id="getReply" parameterType="com.hoijoo.sg.sns.SNSMsg"
+		resultType="com.hoijoo.sg.sns.SNSReply">
+		select * from s_gallery_sns_reply
+		where sgsr_sgs_no = #{sgs_no}
+		order by sgsr_when
+		</select>
+	
+	<insert id="writeMsg" parameterType="com.hoijoo.sg.sns.SNSMsg">
+		insert into s_gallery_sns values(s_gallery_sns_seq.nextval, #{sg_email},
+			#{sgs_txt}, sysdate)
+	</insert>
+	
+
+	
+	<insert id="writeReply" parameterType="com.hoijoo.sg.sns.SNSReply">
+		insert into s_gallery_sns_reply values(s_gallery_sns_reply_seq.nextval, 
+			#{sgsr_sgs_no}, #{sgsr_owner}, #{sgsr_txt}, sysdate)
+	</insert>
+	<update id="updateMsg"
+		parameterType="com.hoijoo.sg.sns.SNSMsg">
+		update s_gallery_sns
+		set sgs_txt = #{sgs_txt}
+		where sgs_no =
+		#{sgs_no}
+	</update>
+</mapper>

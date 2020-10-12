@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+#f7f7f7
+		
+#4ed5c7
+ 	
+#f7a67b
+	  
+#d44865
+	
+#b8da8d
+
+@font-face {
+	font-family: notoB;
+	src: url("../font/NonoSansKR-Bold.OTF");
+}
+
+@font-face {
+	font-family: notoM;
+	src: url("../font/NonoSansKR-Medium.OTF");
+}
+
+
+.sm {
+	width: 70%;
+	border: black solid 1px;
+	border-radius: 10px;
+	background-size: 25%;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	font-family: notoB;
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.smPhoto {
+	max-width: 80px;
+	border-radius: 10px;
+}
+
+.smOwner {
+	font-family: "notoM";
+	font-size: 18pt;
+	padding-left: 10px;
+}
+
+.smDate {
+	font-family: "notoM";
+	font-size: 13pt;
+	padding-right: 10px;
+}
+
+.smTxt {
+	font-family: "notoM";
+	font-size: 12pt;
+	padding-left: 13px;
+	font-weight: 500;
+	word-break: break-all;
+}
+
+.sm button {
+	border: none;
+	background-color: transparent;
+	font-family: "notoM";
+	font-size: 12pt;
+	cursor: pointer;
+}
+
+#snsMsgArea {
+	margin: auto;
+	margin-top: 100px;
+	width: 80%;
+}
+
+#snsWriteArea {
+	position: fixed;
+	bottom: 0px;
+	width: 450px;
+	transition: all 0.4s ease-out;
+}
+#snsWriteAreaSummoner {
+	background-color: #042f66;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#snsWriteTable {
+	width: 400px;
+	border-spacing: 0px;
+}
+
+#snsWriteTable textarea {
+	border: none;
+	background-color: transparent;
+	width: 340px;
+	height: 100px;
+	font-size: 12pt;
+	padding: 10px;
+	font-family: notoM;
+}
+
+#snsWriteTable textarea::placeholder, #snsSearchTable input::placeholder{
+	color: black;
+}
+
+#swtTd1 {
+	border-left: #042f66 solid 4px;
+	border-top: #042f66 solid 4px;
+	border-bottom: #042f66 solid 4px;
+	width: 370px;
+}
+
+#swtTd2 {
+	border-right: #042f66 solid 4px;
+	border-top: #042f66 solid 4px;
+	border-bottom: #042f66 solid 4px;
+	background-color: #042f66;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#snsSearchTable {
+	width: 400px;
+	border-spacing: 0px;
+}
+
+#sstTd1 {
+	border-top: #042f66 solid 4px;
+	border-bottom: #042f66 solid 4px;
+	border-left: #042f66 solid 4px;
+	width: 370px;
+}
+
+#sstTd2 {
+	border-top: #042f66 solid 4px;
+	border-bottom: #042f66 solid 4px;
+	border-right: #042f66 solid 4px;
+	background-color: #042f66;
+}
+
+#snsSearchTable input {
+	border: none;
+	background-color: transparent;
+	font-size: 12pt;
+	padding: 10px;
+	width: 340px;
+	font-family: notoM;
+}
+
+#snsL{
+	position: fixed;
+	left: 0px;
+	top:200px;
+	width:150px;
+	height:550px;
+	color: #042f66;
+	font-size: 100pt;
+	cursor: pointer;
+}
+#snsR{
+	position: fixed;
+	right: 0px;
+	top:200px;
+	width:150px;
+	height:550px;
+	color: #042f66;
+	font-size: 100pt;
+	cursor: pointer;
+}
+
+#smReplyArea {
+	padding: 20px;
+	font-size: 12pt;
+	font-family: notoM;
+}
+
+.smReplyID {
+	font-family: notoB;
+	font-size: 13pt;
+	padding-bottom: 7px;
+	margin-right: 8px;
+}
+#smReplyArea input {
+	border: none;
+	background-color: transparent;
+	font-family: notoM;
+	padding-left: 15px;
+	font-size: 11pt;
+	width: 300px;
+}
+#smReplyArea button {
+	border: none;
+	background-color: transparent;
+	font-family: "b";
+	font-size: 13pt;
+}
+
+
+
+.textBtn {
+	background-color: transparent;
+	border: none;
+	font-family: arM;
+	font-size: 14pt;
+	color: #4ed5c7;
+	cursor: pointer;
+}
+
+.textPlace {
+	resize: none;
+	width: 600px;
+	height: 50px;
+	color: black;
+	font-family: arM;
+	font-size: 10pt;
+	border: #4ed5c7 solid 2px;
+	border-radius: 5px;
+	background-color: transparent;
+}

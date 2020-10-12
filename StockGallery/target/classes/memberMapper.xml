@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hoijoo.sg.member.MemberMapper">
+	<delete id="bye"
+		parameterType="com.hoijoo.sg.member.Member">
+		delete from s_gallery_member where sg_email = #{sg_email}
+	</delete>
+	<insert id="join" parameterType="com.hoijoo.sg.member.Member">
+		insert into s_gallery_member
+		values
+		(#{sg_email}, #{sg_name}, #{sg_pw}, #{sg_gender}, #{sg_addr}, #{sg_photo})
+	</insert>
+	<select id="getMemberByID"
+		parameterType="com.hoijoo.sg.member.Member"
+		resultType="com.hoijoo.sg.member.Member">
+		select *
+		from s_gallery_member
+		where sg_email = #{sg_email}
+	</select>
+	<update id="update" parameterType="com.hoijoo.sg.member.Member">
+		update s_gallery_member
+		set sg_pw = #{sg_pw}, sg_name = #{sg_name}, sg_addr = #{sg_addr},
+		sg_photo = #{sg_photo}
+		where sg_email = #{sg_email}
+	</update>
+</mapper>

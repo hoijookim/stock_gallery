@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+#color {
+ color: #7fdbda;
+ color: #ade498;
+ color: #ede682;
+ color: #febf63;
+	
+}
+@font-face {
+	font-family: sd3;
+	src: url(../font/SCDREAM3.OTF);
+}
+@font-face {
+	font-family: sd5;
+	src: url(../font/SCDREAM5.OTF);
+}
+@font-face {
+	font-family: sd7;
+	src: url(../font/SCDREAM7.OTF);
+}
+@font-face {
+	font-family: notoM;
+	src: url(../font/NonoSansKR-Medium.OTF);
+}
+@font-face {
+	font-family: notoB;
+	src: url(../font/NonoSansKR-Bold.OTF);
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.alert {
+	font-family: notoM;
+	font-size: 14pt;
+	color: red;
+}
+
+body{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.writerC {
+	color: #FAFAFA;
+	font-size: 16pt;
+}
+
+#header {
+	width: 85%;
+	margin: auto;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	height: 30px;
+}
+
+.homeImg img {
+	max-width: 600px;
+	margin-top: 50px;
+	
+	
+}
+
+.loginCategory {
+	display: inline-block;
+	float: right;
+	width: 200px;
+	margin-top: 14px;
+}
+
+.loginPageClick {
+	text-decoration: none;
+	color: black;
+	font-family: notoB;
+	font-size: 14pt;
+	border: black solid 1px;
+	border-radius: 15px;	
+	padding: 2px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: right;
+}
+
+.logo{
+	display: inline-block;
+	float: left;
+	width: 350px;	
+}
+
+.logoImg{
+	max-width: 190px;
+}
+
+.menuArea {
+	display: inline-block;
+	float: right;
+	width: 400px;
+	margin-right: 50px;
+	margin-top: 12px;
+}
+.menuArea a{
+	text-decoration: none;
+	color: black;
+	font-family: notoB;
+	font-size: 14pt;	
+}
+
+.menuAreaTab {
+	display: inline-block;
+	float: right;
+	width: 50%;
+}
+
+#mainArea {
+	width: 80%;
+	margin: auto;
+	margin-top: 50px;
+	padding-right: 100px;
+	
+}
+
+.searchArea{
+	display: inline-block;
+	width: 70%;
+	
+}
+
+.searchBtn{
+	width: 60px;
+	border: none;
+	background-color: transparent;
+	color: black;
+	font-family: notoM;
+	font-size: 12pt;
+	cursor: pointer;
+}
+
+.searchResultArea {
+
+	width: 270px;
+	height: 60px;
+	margin-right: 57px;
+	margin-top: 1px;
+	border-radius: 3px;
+	
+}
+
+.searchResultArea td{
+	font-family: notoM;
+	font-size: 10pt;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+
+.corp_name{
+	width: 250px;
+	border: black solid 2px;
+	height: 30px;
+	margin-left: 20px;
+	margin-right: 10px;
+	padding-left: 20px;
+	font-family: notoM;
+	font-size: 10pt;
+}
+
